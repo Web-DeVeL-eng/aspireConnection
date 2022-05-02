@@ -37,7 +37,7 @@ body {
 }
 
 #message__area {
-  background: url(/bg.webp);
+  background: url(public/bg.webp);
   height: 500px; 
   padding: 25px;
   display: flex;
