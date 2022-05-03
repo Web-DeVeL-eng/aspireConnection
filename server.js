@@ -6,6 +6,7 @@ const app = express();
 // const http = require('http').createServer(app)
 
 const server=http.createServer(app);
+const hostname= '0.0.0.0';
 const port = process.env.PORT || 3000
 
 
@@ -37,6 +38,6 @@ io.on('connection',(socket)=>{
 })
 
 
-server.listen(port,()=>{
-    console.log(`Hafeez Is Listening On Port ${port}`)
+server.listen( port, hostname,()=>{
+    console.log(`Server Running at http://${hostname}:${port}/`)
 })
