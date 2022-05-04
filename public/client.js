@@ -28,9 +28,9 @@ function userJoinLeft(user,status){
     div.innerHTML=content;
     messageArea.appendChild(div);
 
-    setTimeout(() => {
-        div.remove();
-    }, 3000);
+    // setTimeout(() => {
+    //     div.remove();
+    // }, 10000);
 }
 
 socket.on('user-disconnected',(socket_name)=>{

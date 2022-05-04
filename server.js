@@ -6,8 +6,8 @@ const app = express();
 // const http = require('http').createServer(app)
 
 const server=http.createServer(app);
-const hostname= '0.0.0.0';
-const port = process.env.PORT || 1000
+// const hostname= '0.0.0.0';
+const port = process.env.PORT || 3000
 
 
 app.use(express.static('\public'));
@@ -38,6 +38,6 @@ io.on('connection',(socket)=>{
 })
 
 
-server.listen( port, hostname,()=>{
-    console.log(`Server Running at http://${hostname}:${port}/`)
+server.listen( port, ()=>{
+    console.log(`Server Running at http://hagdsh:${port}/`)
 })
